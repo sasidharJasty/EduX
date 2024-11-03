@@ -7,7 +7,7 @@ import { DropDownNavbar } from "./NavMenu";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-[#0a0a0a] left-0 dark:border-neutral-900 fixed top-0 z-50 w-screen border-b-[1px] p-1">
+    <nav className="bg-white  dark:bg-[#0a0a0a]/50 left-0  backdrop-blur-md fixed top-0 z-50 w-screen  p-1">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -41,7 +41,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#0a0a0a] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#0a0a0a] md:dark:bg-[#0a0a0a] dark:border-gray-700">
+          <ul className="flex flex-col font-medium p-4 ml-40 mx-auto w-fit md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
             <li>
               <a
                 href="#"
@@ -54,8 +54,10 @@ export default function Navbar() {
             <DropDownNavbar />
           </ul>
         </div>
-        <div className="flex gap-4">
-          <Button variant={"ghost"}>Documentation</Button>
+        <div className="flex ">
+          <button className="w-fit px-7 py-2 bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
+            Documentation
+          </button>
           {/*<Button className="hover:!bg-blue-500" variant={"secondary"}>
             Contact Us
           </Button>*/}
