@@ -213,16 +213,15 @@ function App() {
         ></img>
 
         <p className=" mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight ">
-          Beautiful Landing Page
+        Elevate Your Learning
           <br />
-          Design for You
+           Experience
           <br />
           <span className="text-[#9E9E9E] font-thin text-2xl h-fit !w-[700px] mx-auto block mt-10">
-            A good design is not only aesthetically pleasing, but also
-            functional. It should be able to solve the problem{" "}
+          Discover an intuitive, AI-powered platform that adapts to your unique goals and elevates your learning journey with tools for success. {" "}
           </span>
           <button className="w-fit text-2xl px-7 py-2 font-normal bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
-            <h1 className="text-lg">Documentation</h1>
+            <h1 className="text-lg">Learn More</h1>
           </button>
         </p>
         <div className="left-[50%] absolute mt-10 w-fit h-fit">
@@ -247,46 +246,67 @@ function App() {
       <div></div>
       <section className="w-[70%] mx-auto mt-32">
         <h1 className="text-[80px] font-semibold">
-          Enhance{" "}
+        Accelerare Your{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r to-red-400 from-purple-500">
-            Productivity
+           Learning
           </span>
         </h1>
         <p className="text-[#9E9E9E] font-[200] text-2xl h-fit w-1/2 block">
-          A good design is not only aesthetically pleasing, but also functional.
-          It should be able to solve the problem{" "}
+        Our Education Platform combines design with powerful functionality to create personalized learning experiences.{" "}
         </p>
         <div className="mt-20 flex justify-between">
           <Feature
-            title={"Customizable Dashboard"}
+            title={"AI-Powered Course Creation"}
             text={
-              "Easily customize your dashboard layout to fit your workflow. Tailored for maximum efficiency."
+              "Create custom courses that align with your interests and goals. Our platform analyzes your preferences to build a tailored curriculum with relevant materials and assessments."
             }
             icon={<FaUserCog />}
           />
           <Feature
-            title={"Real-Time Collaboration"}
+            title={"Efficient Task Management"}
             text={
-              "Collaborate with team members in real-time. Seamlessly integrate chat, tasks, and file sharing."
+              "Stay organized with our intuitive task manager. Assign, prioritize, and track your learning tasks effortlessly, with automatic suggestions that help you focus on what matters most."
             }
             icon={<FaUsers />}
           />
           <Feature
-            title={"Analytics & Insights"}
+            title={"Interactive Flashcard Generator"}
             text={
-              "Gain deep insights into your performance with built-in analytics. Make data-driven decisions with ease."
+              "Enhance your study sessions with flashcards that can be created automatically or customized by you. Optimize your retention turning study time into effective learning."
+            }
+            icon={<FaChartBar />}
+          />
+        </div>
+        <div className="mt-20 flex justify-between">
+          <Feature
+            title={"Insightful Progress Tracking"}
+            text={
+              "Visualize your learning journey with comprehensive analytics that highlight your strengths and areas for improvement. Make informed decisions with real-time feedback."
+            }
+            icon={<FaUserCog />}
+          />
+          <Feature
+            title={"Personalized Study Plans"}
+            text={
+              "Generate comprehensive and individualized study plans based on specific learning goals, deadlines, and available study time, effectively helping users stay organized."
+            }
+            icon={<FaUsers />}
+          />
+          <Feature
+            title={"Parent and Educator Dashboards"}
+            text={
+              "Create intuitive and user-friendly dashboards for parents and educators to easily track student progress, monitor engagement, and receive valuable insights."
             }
             icon={<FaChartBar />}
           />
         </div>
       </section>
       <section className="w-[70%] mx-auto my-32 ">
-        <div className="w-full min-h-[400px] rounded-[30px] bg-gradient-to-br from-red-300  to-purple-600 pt-24 pl-24 flex relative">
+        <div className="w-full min-h-[470px] rounded-[30px] bg-gradient-to-br from-red-300  to-purple-600 pt-24 pl-24 flex relative">
           <div className="w-1/2">
             <h3 className="text-xl">Love Our Tools?</h3>
             <h1 className="text-[50px] font-semibold mt-2 leading-snug">
-              Feel Free to Join our 15 Days Free Trial
-            </h1>
+              Providing our platform to students at no cost.</h1>
             <Button className="mt-8" variant={"outline"}>
               Get Started
             </Button>
