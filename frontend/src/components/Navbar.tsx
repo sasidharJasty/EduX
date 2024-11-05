@@ -54,12 +54,14 @@ export default function Navbar() {
             <DropDownNavbar />
           </ul>
         </div>
-        <div className="flex ">
-          <button className="w-fit px-7 py-2 bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
-            Documentation
-          </button>
+        <div className="flex">
+          <a href = "#waitlist" >
+            <button className="w-fit px-7 py-2 bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
+              Join the Waitlist
+            </button>
+          </a>
           {/*<Button className="hover:!bg-blue-500" variant={"secondary"}>
-            Contact Us
+            Contact Us2
           </Button>*/}
         </div>
       </div>

@@ -13,7 +13,7 @@ import { Button } from "./components/ui/button";
 import map from "./Files/Map.png";
 import "./App.css";
 import RevealText from "./components/reveal";
-
+import WordPullUp from "./components/ui/word-pull-up";
 import OrbitingCircles from "./components/ui/orbiting-circles";
 
 function OrbitingCirclesDemo() {
@@ -211,17 +211,20 @@ function App() {
           src={Eclipse}
           className="absolute left-[50%] -top-[15%] scale-100"
         ></img>
-
-        <p className=" mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight ">
-        Elevate Your Learning
-          <br />
-           Experience
-          <br />
+        <p className="mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight">
+        <WordPullUp
+            className=" mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight "
+            words="Elevate Your Learning"
+        />
+        <WordPullUp
+            className=" mx-auto w-fit h-fit mt-[5px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight "
+            words="Experience"
+        />
           <span className="text-[#9E9E9E] font-thin text-2xl h-fit !w-[700px] mx-auto block mt-10">
           Discover an intuitive, AI-powered platform that adapts to your unique goals and elevates your learning journey with tools for success. {" "}
           </span>
           <button className="w-fit text-2xl px-7 py-2 font-normal bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
-            <h1 className="text-lg">Learn More</h1>
+            <h1 className="text-lg">Join the Waitlist</h1>
           </button>
         </p>
         <div className="left-[50%] absolute mt-10 w-fit h-fit">
@@ -317,7 +320,7 @@ function App() {
           ></img>
         </div>
       </section>
-      <div className="!z-10 !flex !min-h-64 !items-center !justify-center !rounded-lg !border bg-white dark:bg-black overflow-y-hidden">
+      <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white dark:bg-black overflow-auto">
         <TextReveal text="Magic UI will change the way you design." />
       </div>
     </div>
