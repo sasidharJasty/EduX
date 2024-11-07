@@ -1,5 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import reactLogo from "./assets/A.png";
 import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import { FaUserCog, FaUsers, FaChartBar } from "react-icons/fa"; // Example icons
@@ -8,11 +8,12 @@ import Safari from "./components/ui/safari";
 import Eclipse from "./Files/Ellipse 3.png";
 import DashPic from "./Files/Dashboard.png";
 import TextReveal from "./components/ui/text-reveal";
+import Word from "./components/Word";
 import Subtract from "./Files/Subtract.png";
 import { Button } from "./components/ui/button";
 import map from "./Files/Map.png";
 import "./App.css";
-import RevealText from "./components/reveal";
+
 import WordPullUp from "./components/ui/word-pull-up";
 import OrbitingCircles from "./components/ui/orbiting-circles";
 
@@ -199,35 +200,23 @@ function App() {
         <div className="left-[50%] absolute">
           <span className="bg-circle mx-auto -left-[50%]"></span>
         </div>
-        <img
-          src={Eclipse}
-          className="absolute left-[15%] top-[34%] scale-150"
-        ></img>
-        <img
-          src={Eclipse}
-          className="absolute right-[15%] top-[15%] scale-125"
-        ></img>
-        <img
-          src={Eclipse}
-          className="absolute left-[50%] -top-[15%] scale-100"
-        ></img>
+        
         <p className="mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight">
         <WordPullUp
-            className=" mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight "
-            words="Elevate Your Learning"
+          specialNumber={1}
+          specialClass="text-green-500"
+          className="highlight-local mx-auto w-fit h-fit mt-[200px] max-w-[80%] space-x-4 text-center text-[80px] font-semibold font-sans bg-transparent wrd-spacing leading-tight"
+          words="Supporting Local in Every Way"
         />
-        <WordPullUp
-            className=" mx-auto w-fit h-fit mt-[5px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight "
-            words="Experience"
-        />
-          <span className="text-[#9E9E9E] font-thin text-2xl h-fit !w-[700px] mx-auto block mt-10">
-          Discover an intuitive, AI-powered platform that adapts to your unique goals and elevates your learning journey with tools for success. {" "}
+        
+          <span className="text-neutral-500 font-thin text-2xl h-fit !w-[700px] mx-auto block mt-10">
+          An AI-powered marketplace for Arbor Bend residents to securely buy, sell, and exchange goods and services with neighbors.
           </span>
-          <button className="w-fit text-2xl px-7 py-2 font-normal bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
+          <button className="w-fit text-2xl px-7 py-2 font-normal bg-green-500 text-white rounded-md">
             <h1 className="text-lg">Join the Waitlist</h1>
           </button>
         </p>
-        <div className="left-[50%] absolute mt-10 w-fit h-fit">
+        {/*<div className="left-[50%] absolute mt-10 w-fit h-fit">
           <div className="w-fit h-fit rounded-xl relative -left-[50%]">
             <BorderBeam
               className="h-[83.6%] mt-[6.2%]"
@@ -244,71 +233,50 @@ function App() {
             </Safari>
           </div>
         </div>
-        <img src={Subtract} className="w-screen mt-[450px]"></img>
+        <img src={Subtract} className="w-screen mt-[50px] hue-rotate-[190deg]"></img>*/}
       </div>
       <div></div>
       <section className="w-[70%] mx-auto mt-32">
+       
         <h1 className="text-[80px] font-semibold">
-        Accelerare Your{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r to-red-400 from-purple-500">
-           Learning
+        Buy, Sell and {" "}
+          <span className="bg-clip-text text-transparent bg-green-500">
+           Connect
           </span>
         </h1>
-        <p className="text-[#9E9E9E] font-[200] text-2xl h-fit w-1/2 block">
-        Our Education Platform combines design with powerful functionality to create personalized learning experiences.{" "}
+        
+        <p className="text-neutral-500 font-[200] text-2xl h-fit w-1/2 block">
+        Our Arbor Bend Marketplace creates a seamless, local commerce experience for buying, selling, and connecting with your neighbors.{" "}
         </p>
         <div className="mt-20 flex justify-between">
           <Feature
-            title={"AI-Powered Course Creation"}
+            title={"Personalized Recommendations"}
             text={
-              "Create custom courses that align with your interests and goals. Our platform analyzes your preferences to build a tailored curriculum with relevant materials and assessments."
+              "Discover items you’ll love with our AI-driven recommendations. Our platform suggests products based on interests and purchasing habits, making it easier to find your needs."
             }
             icon={<FaUserCog />}
           />
           <Feature
-            title={"Efficient Task Management"}
+            title={"Smart Pricing Assistant"}
             text={
-              "Stay organized with our intuitive task manager. Assign, prioritize, and track your learning tasks effortlessly, with automatic suggestions that help you focus on what matters most."
+              "Price and check your items effectively with our Smart Pricing Assistant, which offers optimal price suggestions based on market trends and similar listings in the area."
             }
             icon={<FaUsers />}
           />
           <Feature
-            title={"Interactive Flashcard Generator"}
+            title={"Automated Notifications"}
             text={
-              "Enhance your study sessions with flashcards that can be created automatically or customized by you. Optimize your retention turning study time into effective learning."
-            }
-            icon={<FaChartBar />}
-          />
-        </div>
-        <div className="mt-20 flex justify-between">
-          <Feature
-            title={"Insightful Progress Tracking"}
-            text={
-              "Visualize your learning journey with comprehensive analytics that highlight your strengths and areas for improvement. Make informed decisions with real-time feedback."
-            }
-            icon={<FaUserCog />}
-          />
-          <Feature
-            title={"Personalized Study Plans"}
-            text={
-              "Generate comprehensive and individualized study plans based on specific learning goals, deadlines, and available study time, effectively helping users stay organized."
-            }
-            icon={<FaUsers />}
-          />
-          <Feature
-            title={"Parent and Educator Dashboards"}
-            text={
-              "Create intuitive and user-friendly dashboards for parents and educators to easily track student progress, monitor engagement, and receive valuable insights."
+              "Stay informed with instant notifications for new listings, updates, and offers that match your preferences. Customize your alerts to get the updates that matter to you."
             }
             icon={<FaChartBar />}
           />
         </div>
       </section>
       <section className="w-[70%] mx-auto my-32 ">
-        <div className="w-full min-h-[470px] rounded-[30px] bg-gradient-to-br from-red-300  to-purple-600 pt-24 pl-24 flex relative">
+        <div className="w-full min-h-[470px] rounded-[30px] bg-gradient-to-br from-green-200  to-green-500 pt-24 pl-24 flex relative">
           <div className="w-1/2">
             <h3 className="text-xl">Love Our Tools?</h3>
-            <h1 className="text-[50px] font-semibold mt-2 leading-snug">
+            <h1 className="text-[50px] font-semibold mt-2 leading-snug ">
               Providing our platform to students at no cost.</h1>
             <Button className="mt-8" variant={"outline"}>
               Get Started
@@ -321,7 +289,8 @@ function App() {
         </div>
       </section>
       <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white dark:bg-black overflow-auto">
-        <TextReveal text="Magic UI will change the way you design." />
+
+        
       </div>
     </div>
   );
@@ -337,12 +306,12 @@ function Feature({
   icon: JSX.Element;
 }) {
   return (
-    <div className="bg-[#222228] p-6 rounded-xl w-[30%] text-white">
-      <span className="!w-[50px] !h-[50px] flex items-center justify-center rounded-full bg-indigo-600 text-white text-center mb-6">
+    <div className="bg-white p-6 rounded-xl w-[30%] text-black">
+      <span className="!w-[50px] !h-[50px] flex items-center justify-center rounded-full bg-green-500 text-white text-center mb-6">
         {icon}
       </span>
       <h1 className="text-3xl font-normal mb-4">{title}</h1>
-      <p className="text-md text-neutral-400">{text}</p>
+      <p className="text-md text-neutral-500">{text}</p>
     </div>
   );
 }

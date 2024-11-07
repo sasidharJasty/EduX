@@ -75,3 +75,8 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+
+.wrd-spacing{
+  word-spacing: 100px !important;
+}

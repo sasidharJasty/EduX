@@ -2,18 +2,18 @@ import { useState } from "react";
 
 import { ModeToggle } from "./theme-switch";
 import { Button } from "@/components/ui/button";
-import Logo from "../assets/react.svg";
+import Logo from "../assets/A.png";
 import { DropDownNavbar } from "./NavMenu";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white  dark:bg-[#0a0a0a]/50 left-0  backdrop-blur-md fixed top-0 z-50 w-screen  p-1">
+    <nav className="bg-white  dark:bg-[#0a0a0a] left-0 shadow backdrop-blur-md fixed top-0 z-50 w-screen  p-1">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            className="invert dark:invert-0 mix-blend-difference"
+            className="invert dark:invert-0 mix-blend-difference h-[45px]"
             src={Logo}
-            alt="Vercel logomark"
+            alt="Logo"
           />
         </a>
         <button
@@ -41,7 +41,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 ml-40 mx-auto w-fit md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
+          <ul className="flex flex-col font-medium p-4 ml-60 mx-auto w-fit md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
             <li>
               <a
                 href="#"
@@ -55,14 +55,16 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex">
-          <a href = "#waitlist" >
-            <button className="w-fit px-7 py-2 bg-gradient-to-r from-red-400 to-purple-500 rounded-md">
-              Join the Waitlist
+          <a href = "#waitlist" className="mr-2  pr-2" >
+            <button className="w-fit px-5 py-2 hover:bg-green-500 hover:text-white transition-all rounded-md">
+              Contact Us
             </button>
           </a>
-          {/*<Button className="hover:!bg-blue-500" variant={"secondary"}>
-            Contact Us2
-          </Button>*/}
+          <a href = "#waitlist" >
+            <button className="w-fit px-7 py-2 bg-gradient-to-r text-white transition-all hover:scale-105 hover:shadow-md hover:shadow-green-500 from-green-500 to-green-500 rounded-md">
+              Join the Waitlist
+            </button>
+          </a>   
         </div>
       </div>
     </nav>
