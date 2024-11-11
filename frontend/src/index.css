@@ -76,7 +76,10 @@
   scrollbar-width: none; /* Firefox */
 }
 
-
-.wrd-spacing{
+.green {
+  filter: invert(50%) sepia(95%) saturate(395%) hue-rotate(90deg)
+    brightness(103%) contrast(87%);
+}
+.wrd-spacing {
   word-spacing: 100px !important;
 }

@@ -1,7 +1,3 @@
-import { useState } from "react";
-
-import { ModeToggle } from "./theme-switch";
-import { Button } from "@/components/ui/button";
 import Logo from "../assets/A.png";
 import { DropDownNavbar } from "./NavMenu";
 
@@ -55,16 +51,16 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex">
-          <a href = "#waitlist" className="mr-2  pr-2" >
+          <a href="#waitlist" className="mr-2  pr-2">
             <button className="w-fit px-5 py-2 hover:bg-green-500 hover:text-white transition-all rounded-md">
               Contact Us
             </button>
           </a>
-          <a href = "#waitlist" >
-            <button className="w-fit px-7 py-2 bg-gradient-to-r text-white transition-all hover:scale-105 hover:shadow-md hover:shadow-green-500 from-green-500 to-green-500 rounded-md">
+          <a href="#waitlist">
+            <button className="w-fit px-7 py-2 bg-green-500 transition-all text-white hover:scale-105 hover:shadow-md hover:shadow-green-500 hover:bg-transparent hover:border-green-500 border hover:text-green-500 rounded-md">
               Join the Waitlist
             </button>
-          </a>   
+          </a>
         </div>
       </div>
     </nav>

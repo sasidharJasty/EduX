@@ -9,6 +9,7 @@ import Eclipse from "./Files/Ellipse 3.png";
 import DashPic from "./Files/Dashboard.png";
 import TextReveal from "./components/ui/text-reveal";
 import Word from "./components/Word";
+import Footer from "./components/Footer";
 import Subtract from "./Files/Subtract.png";
 import { Button } from "./components/ui/button";
 import map from "./Files/Map.png";
@@ -196,24 +197,45 @@ function App() {
   return (
     <div className="w-[99.9%] overflow-x-hidden">
       <Navbar />
-      <div className="min-h-screen h-fit overflow-x-hidden w-screen relative ">
+      <div className="min-h-screen h-fit overflow-hidden w-screen relative ">
         <div className="left-[50%] absolute">
           <span className="bg-circle mx-auto -left-[50%]"></span>
         </div>
-        
+        {/*<img
+          src={Eclipse}
+          className="absolute left-[15%] top-[44%] scale-150 green"
+        ></img>
+        <img
+          src={Eclipse}
+          className="absolute right-[15%] top-[15%] scale-125 green"
+        ></img>
+        <img
+          src={Eclipse}
+          className="absolute left-[60%] top-[75%] scale-100 green"
+        ></img>
+        <div
+          className="absolute -left-[30%] -top-[50%] overflow-hidden"
+          style={{
+            background: "radial-gradient(circle, #10B981 10%, transparent 70%)", // Adjust gradient to fully transparent before edges
+            height: "64rem",
+            width: "64rem",
+          }}
+        ></div>*/}
+
         <p className="mx-auto w-fit h-fit mt-[200px] text-center text-[80px] font-semibold font-sans bg-transparent leading-tight">
-        <WordPullUp
-          specialNumber={1}
-          specialClass="text-green-500"
-          className="highlight-local mx-auto w-fit h-fit mt-[200px] max-w-[80%] space-x-4 text-center text-[80px] font-semibold font-sans bg-transparent wrd-spacing leading-tight"
-          words="Supporting Local in Every Way"
-        />
-        
+          <WordPullUp
+            specialNumber={1}
+            specialClass="text-green-500 hover:text-[100px] transition-all"
+            className="highlight-local mx-auto w-fit h-fit mt-[200px] max-w-[80%] space-x-4 text-center text-[80px] font-semibold font-sans bg-transparent wrd-spacing leading-tight"
+            words="Supporting Local in Every Way"
+          />
+
           <span className="text-neutral-500 font-thin text-2xl h-fit !w-[700px] mx-auto block mt-10">
-          An AI-powered marketplace for Arbor Bend residents to securely buy, sell, and exchange goods and services with neighbors.
+            An AI-powered marketplace for Arbor Bend residents to securely buy,
+            sell, and exchange goods and services with neighbors.
           </span>
-          <button className="w-fit text-2xl px-7 py-2 font-normal bg-green-500 text-white rounded-md">
-            <h1 className="text-lg">Join the Waitlist</h1>
+          <button className="w-fit text-lg px-7 py-2 font-normal bg-green-500 text-white rounded-md transition-all hover:scale-105 hover:shadow-md hover:shadow-green-500 hover:bg-transparent hover:border-green-500 border hover:text-green-500 ">
+            Join the Waitlist
           </button>
         </p>
         {/*<div className="left-[50%] absolute mt-10 w-fit h-fit">
@@ -237,16 +259,16 @@ function App() {
       </div>
       <div></div>
       <section className="w-[70%] mx-auto mt-32">
-       
         <h1 className="text-[80px] font-semibold">
-        Buy, Sell and {" "}
-          <span className="bg-clip-text text-transparent bg-green-500">
-           Connect
+          Buy, Sell and{" "}
+          <span className="bg-clip-text text-transparent bg-green-500 hover:text-[100px] transition-all">
+            Connect
           </span>
         </h1>
-        
+
         <p className="text-neutral-500 font-[200] text-2xl h-fit w-1/2 block">
-        Our Arbor Bend Marketplace creates a seamless, local commerce experience for buying, selling, and connecting with your neighbors.{" "}
+          Our Arbor Bend Marketplace creates a seamless, local commerce
+          experience for buying, selling, and connecting with your neighbors.{" "}
         </p>
         <div className="mt-20 flex justify-between">
           <Feature
@@ -277,7 +299,8 @@ function App() {
           <div className="w-1/2">
             <h3 className="text-xl">Love Our Tools?</h3>
             <h1 className="text-[50px] font-semibold mt-2 leading-snug ">
-              Providing our platform to students at no cost.</h1>
+              Providing our platform to students at no cost.
+            </h1>
             <Button className="mt-8" variant={"outline"}>
               Get Started
             </Button>
@@ -288,10 +311,7 @@ function App() {
           ></img>
         </div>
       </section>
-      <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white dark:bg-black overflow-auto">
-
-        
-      </div>
+      <Footer />
     </div>
   );
 }
