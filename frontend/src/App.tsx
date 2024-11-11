@@ -1,23 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/A.png";
-import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import { FaUserCog, FaUsers, FaChartBar } from "react-icons/fa"; // Example icons
-import { BorderBeam } from "./components/ui/border-beam";
-import Safari from "./components/ui/safari";
-import Eclipse from "./Files/Ellipse 3.png";
-import DashPic from "./Files/Dashboard.png";
-import TextReveal from "./components/ui/text-reveal";
-import Word from "./components/Word";
+
 import Footer from "./components/Footer";
-import Subtract from "./Files/Subtract.png";
+
 import { Button } from "./components/ui/button";
 import map from "./Files/Map.png";
 import "./App.css";
 
 import WordPullUp from "./components/ui/word-pull-up";
-import OrbitingCircles from "./components/ui/orbiting-circles";
 
+/*
 function OrbitingCirclesDemo() {
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
@@ -25,7 +17,7 @@ function OrbitingCirclesDemo() {
         Circles
       </span>
 
-      {/* Inner Circles */}
+
       <OrbitingCircles
         className="size-[30px] border-none bg-transparent"
         duration={20}
@@ -43,7 +35,7 @@ function OrbitingCirclesDemo() {
         <Icons.notion />
       </OrbitingCircles>
 
-      {/* Outer Circles (reverse) */}
+
       <OrbitingCircles
         className="size-[50px] border-none bg-transparent"
         radius={190}
@@ -63,7 +55,7 @@ function OrbitingCirclesDemo() {
       </OrbitingCircles>
     </div>
   );
-}
+
 
 const Icons = {
   gitHub: () => (
@@ -191,7 +183,7 @@ const Icons = {
       />
     </svg>
   ),
-};
+};}*/
 
 function App() {
   return (
