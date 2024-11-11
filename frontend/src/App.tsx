@@ -291,8 +291,13 @@ function App() {
           <div className="w-1/2">
             <h3 className="text-xl">Love Our Tools?</h3>
             <h1 className="text-[50px] font-semibold mt-2 leading-snug ">
-              Providing our platform to students at no cost.
+              We're here to empower the Arbor Bend community!
             </h1>
+            <h3 className="text-xl">
+              Providing our platform to residents at no cost, making it easier
+              than ever to connect, buy, sell, and support local.
+            </h3>
+
             <Button className="mt-8" variant={"outline"}>
               Get Started
             </Button>
