@@ -2,8 +2,6 @@
 
 import { motion, Variants } from "framer-motion";
 
-import { cn } from "@/lib/utils";
-
 interface WordPullUpProps {
   words: string;
   delayMultiple?: number;
@@ -38,16 +36,14 @@ export default function WordPullUp({
       variants={wrapperFramerProps}
       initial="hidden"
       animate="show"
-      className={
-        `font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm ${className}`
-      }
+      className={`font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm ${className}`}
     >
       {words.split(" ").map((word, i) => (
         <motion.span
           key={i}
           variants={framerProps}
           style={{ display: "inline-block", paddingRight: "8px" }}
-          className={`${i == specialNumber? specialClass:''}`}
+          className={`${i == specialNumber ? specialClass : ""}`}
         >
           {word === "" ? <span>&nbsp;</span> : word}
         </motion.span>
